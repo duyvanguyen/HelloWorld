@@ -10,8 +10,9 @@ echo "Build Helloworld"'''
     stage('Test') {
       steps {
         sh '''date
-echo "test for pass will continues"
-java Helloword'''
+cd /root/jenkins/Project
+javac Hello.java
+java Hello'''
       }
     }
   }
