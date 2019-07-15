@@ -15,5 +15,11 @@ cd /root/jenkins/Project
 java Hello'''
       }
     }
+    stage('deploy') {
+      steps {
+        sh '''date
+echo "started deploy project"'''
+      }
+    }
   }
 }
