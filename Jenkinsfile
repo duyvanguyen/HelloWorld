@@ -11,7 +11,6 @@ echo "Build Helloworld"'''
       steps {
         sh '''date
 cd /root/jenkins/Project
-javac Hello.java
 java Hello'''
       }
     }
