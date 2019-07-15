@@ -2,19 +2,16 @@ pipeline {
   agent any
   stages {
     stage('build') {
-      parallel {
-        stage('build') {
-          steps {
-            sh '''date
+      steps {
+        sh '''date
 echo "Build Helloworld"'''
-          }
-        }
-        stage('Test') {
-          steps {
-            sh '''echo "test begin"
-java HelloWorld'''
-          }
-        }
+      }
+    }
+    stage('Test') {
+      steps {
+        sh '''date
+echo "test for pass will continues"
+java Helloword'''
       }
     }
   }
