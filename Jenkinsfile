@@ -4,7 +4,8 @@ pipeline {
     stage('build') {
       steps {
         sh '''date
-echo "Build Helloworld"'''
+echo "Build Helloworld"
+javac Hello.java'''
       }
     }
     stage('Test') {
