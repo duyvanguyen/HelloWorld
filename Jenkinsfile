@@ -13,6 +13,7 @@ javac Hello.java'''
       steps {
         sh '''date
 cd /root/jenkins/Project
+sleep 10
 java Hello'''
       }
     }
