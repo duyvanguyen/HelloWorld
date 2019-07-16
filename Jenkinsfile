@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh '''date
 echo "Build Helloworld"
+sleep 5
 javac Hello.java'''
       }
     }
